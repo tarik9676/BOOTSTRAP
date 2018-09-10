@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap tutorial 6</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .jumbotron {
+            background-color: #2E2D88;
+            color: white;
+        }
+        /* Adds borders for tabs */
+        
+        .tab-content {
+            border-left: 1px solid #DDD;
+            border-right: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            padding: 10px;
+        }
+        
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#superman" data-toggle="tab">Superman</a></li>
+            <li><a href="#batman" data-toggle="tab">Batman</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Flash <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="disabled"><a href="#flash" data-toggle="tab">The Flash</a></li>
+                    <li><a href="#kidflash" data-toggle="tab">Kid Flash</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="superman" class="tab-pane fade in active">
+                <p>Superman is a functional superhero appearing in American comic books published by DC Comics.</p>
+            </div>
+            <div id="batman" class="tab-pane fade">
+                <p>Batman is a functional superhero appearing in American comic books published by DC Comics.</p>
+            </div>
+            <div id="flash" class="tab-pane fade">
+                <p>The Flash is a functional superhero appearing in American comic books published by DC Comics.</p>
+            </div>
+            <div id="kidflash" class="tab-pane">
+                <p>Kid Flash is a functional superhero appearing in American comic books published by DC Comics.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/jQuery.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.3.3.5.css">
+    <style type="text/css">
+        .jumbotron {
+            background-color: #2E2D88;
+            color: white
+        }
+        
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .table-striped {
+            background-color: #e48833
+        }
+        
+        nav {
+            margin-top: 10px;
+        }
+        
+        .nav li {
+            background: #221f1f;
+            border: 2px solid black;
+            border-radius: 4px
+        }
+        
+        .nav li a {
+            font-size: 120%;
+            color: white;
+        }
+        
+        .nav li a:hover {
+            background-color: black;
+        }
+        
+        @media screen and (max-width: 992px) {
+            .nav li a {
+                font-size: 100%;
+            }
+            .nav>li>a {
+                padding: 10px 10px;
+            }
+            .navbar-nav>li>a {
+                line-height: 25px
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .nav li a {
+                font-size: 120%;
+            }
+            .nav>li>a {
+                padding: 10px 25px;
+            }
+            .nav li {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-right">
+            <ul class="nav navbar-nav pull-right nav-tabs nav-justified">
+                <li><a class="current" href="home.html">Home</a></li>
+                <li><a href="html5.html">HTML5</a></li>
+                <li><a href="css3.html">CSS3</a></li>
+                <li><a href="bootstrap.html">Bootstrap</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="jquery.html">jQuery</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="mysql.html">MySQL</a></li>
+                <li><a href="wordpress.html">WordPress</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+        <h1>Home</h1>
+        <p>Hello,<br>Welcome to the website. Here you can learn web development. You can build a website as you wish even like an application. So there is a lot of fun in learning web development.</p><br>
+        <p>You need to learn HTML5, CSS3, Bootstrap, JavaScript, jQuery, PHP, MySQL and WordPress. Here HTML5 and CSS3 help to build the structure of webpage. Bootstrap work as the frame of CSS. JavaScript and PHP are the programing language. jQuery work
+            as the frame of JavaScript. MySQL is used for the database of the website. Wordpress is the easiest way to build a webpage. But all of this tools are mainly categorized in two section. Those are front-end design and back-end design.</p>
+
+
+        <!-- Category -->
+        <div class="category">
+            <ul>
+                <li class="front">
+                    <h4>Front-end design tools</h4>
+                    <ol type="a">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ol>
+                </li>
+
+                <li class="back">
+                    <h4>Back-end design tools</h4>
+                    <ol type="a">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>WordPress</li>
+                    </ol>
+                </li>
+            </ul>
+        </div><br>
+
+        <p class="editors">We need a editor to write those languages except MySQL and Wordpress. Anyone can write a language in Notepad. You can also make a webpage with MS Word. But it is not even good idea to use Notepad and MS Word. Till 2018 most popular editors are
+            Visual Studio Code, Atom, Sublime Text 3, Notepad++ etc. I will advise you to keep at least two editors and those are Atom and Visual Studio Code or as you feel comfortable.</p>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>&COPY; Tarikul Islam</p>
+    </footer>
+
+
+
+
+
+
+    <script scr="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

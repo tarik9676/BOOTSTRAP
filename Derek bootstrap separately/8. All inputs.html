@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All inputs</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        #navpil,
+        #checkbox,
+        #input,
+        #dropdown,
+        #userid {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="input">
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Your Name</span>
+            <input type="text" class="form-control" placeholder="Full Name">
+        </div><br>
+
+
+        <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="Full Name">
+            <span class="input-group-btn">
+                           <button class="btn btn-default">Enter</button>
+                    </span>
+        </div>
+    </div>
+    <!-- End inputs -->
+    <div class="container" id="userid">
+        <div class="row">
+
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User ID
+                                <span class="caret"></span>
+                            </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" aria-label="...">
+            </div>
+        </div>
+    </div>
+    <!-- End group inputs & Button -->
+
+    <div class="container" id="checkbox">
+        <div class="row">
+            <div class="input-group">
+                <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <!-- End checkbox & input -->
+
+    <script src="js/jQuery.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>

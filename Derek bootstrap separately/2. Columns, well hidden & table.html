@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Columns, well hidden & table</title>
+    <style>
+        .jumbotron {
+            background-color: #2E2D88;
+            color: white;
+        }
+        /* Adds borders for tabs */
+        
+        .tab-content {
+            border-left: 1px solid #DDD;
+            border-right: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            padding: 10px;
+        }
+        
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Column 1</h4>
+                This text is meant to reduce the confusion brought about by integrating multiple languages into one site while at the same time providing an overview of the entire development process. Within, you will find information on a variety of topics involved
+                in the overall process of planning, designing, and finally creating a website; this background will help you understand how these pieces fit together, so you are better able to understand and contribute to a project and work with others
+                on your team.
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Column 2</h4>
+                The Missing Link attempts to bridge the gap between these conflicting educational demands. While most web development texts opt to delve deeply into one or two of the tools in the belt of a web programmer, the author of this text takes a broad approach
+                to teaching web programming and development. The result is a single resource that integrates good design practices, modern technologies, and all of the programming tools that one would need to build a successful, dynamic web site.
+            </div>
+            <div class="clearfix visible-sm"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Column 3</h4>
+                It is always a challenge to teach a course in web design or web programming. Systems that run on the World Wide Web must necessarily change with the emergence of any sort of new computer technology, creating a rapidly evolving landscape. The students
+                that enroll in web development courses are a particularly diverse group; the subject attracts strong programmers with weak aesthetic design skills as well as those who are more aesthetically inclined with little knowledge of programming.
+                Finally, the visibility and mission criticality of web platforms makes the design and security of these systems paramount.
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Column 4</h4>
+                Ultimately, you can think of virtualization like juggling. In this analogy, your hands are the servers, and the balls you juggle are your operating systems. The traditional approach of hosting one application on one server is like holding one ball in
+                each hand. If your hands are both “busy” holding a ball, you cannot interact with anything else without putting a ball down. If you juggle them, however, you can “hold” three or more balls at the same time. Each time your hand touches
+                a ball is akin to a virtualized system needing resources, and having those resources allocated by the virtualization layer (the juggler) assigning resources (a hand), and then reallocating for the next system that needs them.
+            </div>
+
+
+            <!-- THREE COLUMN COLLAPSING -->
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                <h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+
+                <div id="col1Content" class="collapse in">Your operating system is what allows you to interact with the applications and hardware that make up your computer. It facilitates resource allocation to your applications, and communication between hardware and software. Typically, operating
+                    systems for servers fall under three categories: Linux-based, Windows-based, and Mac-based. Within each of these categories are more options, such as various version of Mac and Windows operating systems, and the wide variety of Linux
+                    operating systems. We will utilize Linux, the predominant choice.
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                <h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
+
+                <div id="col2Content" class="collapse">Your operating system is what allows you to interact with the applications and hardware that make up your computer. It facilitates resource allocation to your applications, and communication between hardware and software. Typically, operating
+                    systems for servers fall under three categories: Linux-based, Windows-based, and Mac-based. Within each of these categories are more options, such as various version of Mac and Windows operating systems, and the wide variety of Linux
+                    operating systems. We will utilize Linux, the predominant choice.
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
+
+                <div id="col3Content" class="collapse">Your operating system is what allows you to interact with the applications and hardware that make up your computer. It facilitates resource allocation to your applications, and communication between hardware and software. Typically, operating
+                    systems for servers fall under three categories: Linux-based, Windows-based, and Mac-based. Within each of these categories are more options, such as various version of Mac and Windows operating systems, and the wide variety of Linux
+                    operating systems. We will utilize Linux, the predominant choice.
+                </div>
+            </div>
+        </div>
+
+
+        <!--Screen Size-->
+        <div class="well hidden-sm hidden-md hidden-lg">
+            <p>Screen &lt; 768px</p>
+        </div>
+
+        <div class="well hidden-md hidden-lg">
+            <p>Screen &gt; 768px and &lt; 992px</p>
+        </div>
+
+        <div class="well hidden-lg">
+            <p>Screen &gt; 992px and &lt; 1200px</p>
+        </div>
+
+        <div class="well">
+            <p>Screen &gt; 1200px</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <table class="table table-bordered table-striped table hover">
+                    <thead>
+                        <tr>
+                            <td colspan="4">Best Baseball Players</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <!-- You can adjust the width of table columns as well -->
+                            <th class="col-md-2">
+                                </td>
+
+                                <!-- Use text alignment like text-center or text-right -->
+                                <th class="text-center">Average</td>
+                                    <th class="text-center">RBIs</td>
+                                        <th class="text-center">Homeruns</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Hank Aron*</a></td>
+                            <td>.305</td>
+                            <td>2297</td>
+                            <td>755</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Babe Ruth*</a></td>
+                            <td>.342</td>
+                            <td>2214</td>
+                            <td>714</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Barry Bonds</a></td>
+                            <td>.298</td>
+                            <td>1996</td>
+                            <td>762</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jQuery.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
